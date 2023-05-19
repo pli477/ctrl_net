@@ -256,7 +256,7 @@ class Script(scripts.Script):
         cls = UiControlNetUnit if is_ui else external_code.ControlNetUnit
         return cls(
             enabled=True,
-            module="canny",
+            module="openpose_full",
             model=list(global_state.cn_models.keys())[0]
         )
 
